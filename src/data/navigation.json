@@ -1,0 +1,7 @@
+[
+  { "href": "#work", "label": "Work", "external": false },
+  { "href": "#system-design", "label": "System Design", "external": false },
+  { "href": "#experience", "label": "Experience", "external": false },
+  { "href": "#about", "label": "About", "external": false },
+  { "href": "/documents/Olha-Razvaliaieva-Resume.pdf", "label": "Resume", "external": true }
+]

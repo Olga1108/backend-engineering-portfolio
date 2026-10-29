@@ -1,0 +1,2 @@
+.visual { color: var(--accent); width: 85px; flex-shrink: 0; }
+.grid { stroke: var(--border); stroke-width: .5; }

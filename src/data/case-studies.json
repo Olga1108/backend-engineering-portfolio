@@ -1,0 +1,36 @@
+[
+  {
+    "id": "versioning-platform",
+    "title": "Universal Versioning Platform",
+    "subtitle": "Reliable event delivery and entity history across services.",
+    "description": "End-to-end technical design for service-agnostic audit history, with reliable delivery, idempotent processing and backward-compatible migration.",
+    "status": "Implementation in progress",
+    "technologies": ["Symfony", "RabbitMQ", "Redis", "ClickHouse"],
+    "outcomes": ["Reliable event delivery", "Searchable entity history", "Backward-compatible migration"],
+    "notes": ["Researched three interconnected services and authored the end-to-end platform design.", "Designed at-least-once delivery with Transactional Outbox and RabbitMQ, Redis-coordinated idempotency, and ClickHouse storage.", "The architecture is designed; implementation is ongoing. These are design goals, rather than measured production outcomes."]
+  },
+  {
+    "id": "bff-performance",
+    "title": "BFF Performance Optimization",
+    "subtitle": "~47% lower peak response time",
+    "technologies": ["Symfony", "Redis", "New Relic"],
+    "visual": "chart",
+    "notes": ["Profiled the BFF microservice with New Relic APM to identify performance bottlenecks.", "Implemented granular Redis caching, staggered TTLs and proactive cron warming.", "Reduced peak response times from 150 ms to under 80 ms and achieved a 0.99 Apdex score."]
+  },
+  {
+    "id": "polls-quizzes",
+    "title": "Polls & Quizzes Microservice",
+    "subtitle": "Built from scratch · DDD / CQRS",
+    "technologies": ["Symfony", "RabbitMQ"],
+    "visual": "service",
+    "notes": ["Designed and owned a Symfony microservice for approximately 11,200 users, using DDD, CQRS and Hexagonal architecture.", "Evolved multilingual voting into scored and opinion quizzes, campaign analytics, and backend result privacy while preserving client compatibility.", "The service architecture later became a team standard."]
+  },
+  {
+    "id": "data-processing",
+    "title": "High-Performance Data Processing",
+    "subtitle": "22,100+ URLs · under 44 seconds",
+    "technologies": ["PHP", "Symfony", "SQL"],
+    "visual": "bars",
+    "notes": ["Built an optimized Symfony console command for an internal data-extraction workflow.", "Improved database querying to process more than 22,100 URLs in under 44 seconds, reducing processing time by 99% from the previous hours-long workflow."]
+  }
+]

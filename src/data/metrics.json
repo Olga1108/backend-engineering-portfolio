@@ -1,0 +1,6 @@
+[
+  { "value": "150M+", "label": "global product audience", "description": "Contributing to media platforms across 30+ countries." },
+  { "value": "−47%", "label": "peak API response time", "description": "From 150 ms to under 80 ms with targeted BFF caching." },
+  { "value": "19h → 4.5h", "label": "frontend integration time", "description": "Through clear API documentation and shared standards." },
+  { "value": "85%+", "label": "backend test coverage", "description": "A quality baseline across backend services." }
+]

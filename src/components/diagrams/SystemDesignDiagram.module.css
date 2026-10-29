@@ -1,0 +1,4 @@
+.diagram { display: block; width: 100%; height: auto; color: var(--accent); }
+.connections { stroke: currentColor; fill: none; stroke-width: 1; }
+.nodes rect { fill: var(--surface); stroke: var(--border-bright); stroke-width: 1; }
+.nodes text { fill: var(--text); font-family: inherit; font-size: 12px; }

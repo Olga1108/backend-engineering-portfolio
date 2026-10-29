@@ -1,0 +1,22 @@
+[
+  {
+    "period": "2024 — Present", "start": "2024-05", "role": "Backend Engineer", "company": "Digital Sports Media",
+    "description": "High-traffic media platforms serving a global audience of 150M+ and an internal CRM with 600+ daily active users.",
+    "details": "PHP / Symfony and Go services, legacy decomposition, performance optimization, event-delivery design and a shared backend quality baseline."
+  },
+  {
+    "period": "2021 — 2024", "start": "2021-11", "role": "Software Engineer / Full-Stack", "company": "ScrumLaunch",
+    "description": "Multi-tenant SaaS for US clients, with a focus on backend architecture, API design and system resilience.",
+    "details": "End-to-end engineering ownership, REST API contracts, Stripe subscription workflows, client synchronization and direct collaboration with US stakeholders."
+  },
+  {
+    "period": "2021", "start": "2021-06", "role": "Software Engineer", "company": "EPAM Systems",
+    "description": "Delivery applications with maintainable MVC and Observer patterns and real-time data integration.",
+    "details": "Built reusable application components, integrated Firebase data flow and improved single-page application routing."
+  },
+  {
+    "period": "2016 — 2020", "start": "2016", "role": "Product Manager & Lead Designer", "company": "Private Manufacturing Enterprise",
+    "description": "Product development, market research and cross-functional delivery for an international B2B business.",
+    "details": "Led product lifecycles, coordinated production workflows and worked directly with B2B clients to balance business needs and delivery constraints."
+  }
+]

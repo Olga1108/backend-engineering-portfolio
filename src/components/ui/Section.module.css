@@ -1,0 +1,29 @@
+.section {
+  padding-block: var(--section-space);
+  scroll-margin-top: 24px;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.heading h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 600;
+}
+.number {
+  font-size: 16px;
+  color: var(--accent);
+  border-right: 1px solid var(--border);
+  padding-right: 24px;
+  font-variant-numeric: tabular-nums;
+}
+.rule { height: 1px; flex: 1; background: var(--border); margin-left: 8px; }
+@media (max-width: 767px) {
+  .heading { gap: 16px; margin-bottom: 34px; }
+  .number { padding-right: 16px; }
+  .heading h2 { font-size: 10px; letter-spacing: .12em; max-width: 235px; }
+}

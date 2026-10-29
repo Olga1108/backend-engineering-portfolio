@@ -1,0 +1,10 @@
+.diagram { display: block; width: 100%; height: auto; overflow: visible; color: var(--accent); }
+.node { fill: var(--surface); stroke: var(--accent); stroke-opacity: .8; stroke-width: 1; }
+.label { fill: var(--text); font-size: 12px; font-family: inherit; }
+.detail { fill: var(--text-muted); font-size: 10px; font-family: inherit; }
+.database { stroke: var(--accent); stroke-width: 1.1; fill: none; }
+.connections { stroke: var(--accent); }
+.caption { font-size: 11px; fill: var(--text-soft); letter-spacing: .06em; }
+
+.mobile { display: none; }
+@media(max-width: 767px) { .desktop { display: none; } .mobile { display: block; } }

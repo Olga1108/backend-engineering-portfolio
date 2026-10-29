@@ -1,0 +1,6 @@
+[
+  { "number": "01", "title": "Start with invariants", "description": "Understand what must remain true before choosing the architecture." },
+  { "number": "02", "title": "Design for failure", "description": "Retries, duplicate delivery and partial failures are part of the design, not edge cases." },
+  { "number": "03", "title": "Measure before optimizing", "description": "Performance work starts with evidence, not assumptions." },
+  { "number": "04", "title": "Make trade-offs explicit", "description": "Architecture decisions should explain what we gain — and what we give up." }
+]

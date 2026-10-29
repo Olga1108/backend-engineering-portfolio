@@ -1,0 +1,11 @@
+.header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--border); background: var(--background); }
+.inner { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 22px; white-space: nowrap; }
+.monogram { font-size: 25px; letter-spacing: -.06em; color: var(--accent); font-weight: 600; line-height: 1; }
+.name { border-left: 1px solid var(--border); padding-left: 22px; font-size: 13px; }
+.nav { display: flex; gap: 26px; align-items: center; }
+.nav > a { font-size: 12px; display: inline-flex; align-items: center; gap: 6px; transition: color .18s; }
+.nav > a:not(:last-child):hover { color: var(--accent); }
+.nav > a > svg { width: 14px; height: 14px; }
+.menuToggle { display: none; }
+@media(max-width: 1023px) { .inner { min-height: 68px; } .brand { gap: 14px; } .name { font-size: 11px; padding-left: 14px; } .monogram { font-size: 23px; } .menuToggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; background: none; color: inherit; border: 0; cursor: pointer; padding: 11px; } .menuToggle span { width: 22px; height: 1px; background: var(--text-soft); } .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--surface); border-bottom: 1px solid var(--border); padding: 24px; align-items: stretch; gap: 8px; } .nav.open { display: flex; flex-direction: column; } .nav > a { padding: 12px; font-size: 14px; } .nav > a:last-child { margin-top: 8px; justify-content: center; } }

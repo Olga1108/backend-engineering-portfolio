@@ -1,0 +1,6 @@
+{
+  "headline": "Good engineering starts with the right problem.",
+  "description": "Before focusing on software engineering, I spent 4+ years in product management. It changed how I approach technical decisions: architecture is useful only when it solves the right product problem.",
+  "supporting": "My full-stack experience adds the other side of that perspective: how an API is consumed, how a feature reaches the user, and where integration creates friction.",
+  "steps": ["Business problem", "Constraint", "Engineering trade-off", "System design", "Measurable outcome"]
+}

@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Olha Razvaliaieva — Backend Engineering Portfolio
 
-## Getting Started
+A lightweight personal portfolio built with Next.js App Router, TypeScript and CSS Modules. The homepage covers the hero, Selected Impact, engineering work, engineering principles, system-design patterns, product context, mentorship and experience, with responsive navigation and a contact footer.
 
-First, run the development server:
+## Development
 
-```bash
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the local URL printed by Next.js (usually http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Structure
 
-## Learn More
+- `src/app/` — route composition, metadata and global design tokens.
+- `src/components/layout/` — site header and footer.
+- `src/components/sections/` — hero, impact metrics and engineering work.
+- `src/components/diagrams/` — accessible SVG architecture diagrams and card illustrations.
+- `src/components/ui/` — small shared elements.
+- `src/data/` — JSON content and TypeScript content types.
+- `public/documents/` — downloadable resume.
 
-To learn more about Next.js, take a look at the following resources:
+Content renders on the server. Only the responsive navigation needs a client component. Engineering notes use native HTML disclosure controls. There are no runtime content requests, animation libraries, UI frameworks or backend services.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content conventions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Metrics and engineering notes are grounded in the supplied CV. Universal Versioning Platform is explicitly marked as implementation in progress. Diagrams are simplified explanations, not production infrastructure specifications. Full case-study routes are planned for a later iteration. System-design cards and experience entries expose short notes through native disclosure controls.
 
-## Deploy on Vercel
+Update the JSON files to edit text, metrics, technologies and professional links. Local component styles live beside each component; shared palette and layout tokens live in `src/app/globals.css`. The `--section-space` token sets section padding on desktop and mobile; adjacent sections combine to create the space between logical blocks.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project uses the standard Next.js build and can be imported into Vercel from GitHub. Configure the canonical URL and social preview image when the deployment domain is selected. No environment variables are required. Deployment has not been configured in this iteration.

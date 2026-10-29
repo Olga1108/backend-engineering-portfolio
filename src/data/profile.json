@@ -1,0 +1,16 @@
+{
+  "name": "Olha Razvaliaieva",
+  "role": "Backend Engineer",
+  "stack": "PHP / Symfony · Go · Messaging · Reliability",
+  "statement": "I build backend systems that need to stay predictable under load, retries and failure.",
+  "location": "Kyiv, Ukraine",
+  "availability": "Open to US/EU Remote",
+  "engagement": "B2B contractor",
+  "email": "olharazvaliaieva@gmail.com",
+  "links": [
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/olha-razvaliaieva/", "icon": "linkedin" },
+    { "label": "GitHub", "href": "https://github.com/Olga1108", "icon": "github" },
+    { "label": "Email", "href": "mailto:olharazvaliaieva@gmail.com", "icon": "mail" },
+    { "label": "Resume (PDF)", "href": "/documents/Olha-Razvaliaieva-Resume.pdf", "icon": "file" }
+  ]
+}

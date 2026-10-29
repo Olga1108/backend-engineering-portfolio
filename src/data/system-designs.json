@@ -1,0 +1,30 @@
+[
+  {
+    "id": "event-delivery", "title": "Reliable Event Delivery", "focus": "Delivery guarantees",
+    "description": "Persist the event before publishing. Make duplicate delivery safe to process.",
+    "labels": ["API", "Outbox", "RabbitMQ", "Worker", "ClickHouse"],
+    "summary": "API to transactional outbox to RabbitMQ to worker to ClickHouse. A simplified event-delivery pattern.",
+    "note": "A transactional outbox keeps the business change and its event in the same database transaction. Consumers must tolerate redelivery; retries and idempotency belong in the processing design. This pattern informs the versioning platform design, whose implementation is in progress."
+  },
+  {
+    "id": "read-path", "title": "High-load Read Path", "focus": "Latency & load",
+    "description": "Keep repeated reads fast without letting the cache become a source of surprises.",
+    "labels": ["API", "Redis", "Database"],
+    "summary": "API reads through Redis, with a database fallback on a cache miss. A simplified read-path pattern.",
+    "note": "Start with profiling, then choose cache boundaries and freshness rules. In the BFF optimization, granular Redis caching, staggered TTLs and proactive warming reduced peak response times from 150 ms to under 80 ms."
+  },
+  {
+    "id": "versioning", "title": "Versioning Platform", "focus": "Entity history",
+    "description": "Decouple producing services from how entity changes are processed and stored.",
+    "labels": ["Producer", "Queue", "Versioning API", "Storage"],
+    "summary": "Producer to queue to versioning API to storage. Proposed versioning design; implementation is in progress.",
+    "note": "A service-agnostic event contract lets new product domains join the history platform without depending on its storage details. The design includes searchable entity changes and backward-compatible migration. Implementation is in progress."
+  },
+  {
+    "id": "ddd-service", "title": "DDD Service", "focus": "Clear boundaries",
+    "description": "Keep business rules independent of the framework and infrastructure around them.",
+    "labels": ["UI", "Application", "Domain", "Infrastructure"],
+    "summary": "UI calls the application layer, which uses the domain. Infrastructure depends on domain contracts. A simplified dependency diagram.",
+    "note": "Use domain boundaries where business complexity warrants them. The Polls & Quizzes service combines DDD, CQRS and Hexagonal architecture; its structure later became a team standard. Infrastructure implements contracts defined around the domain."
+  }
+]
